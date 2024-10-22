@@ -24,7 +24,7 @@ body {
 }
 
 .dashboard-sidebar {
-    background-color: #1992d4;
+    background-color: #b8202c;
     grid-row: 1 / 3;
     display: flex;
     flex-direction: column;
@@ -33,7 +33,6 @@ body {
     padding: 24px;
 }
 
-.dashboard-sidebar .sidebar-logo,
 .dashboard-sidebar .sidebar-links,
 .dashboard-sidebar .sidebar-settings {
     display: flex;
@@ -41,8 +40,20 @@ body {
 }
 
 .dashboard-sidebar .sidebar-logo {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.dashboard-sidebar .sidebar-logo p {
     font-weight: bold;
     font-size: 26px;
+}
+
+.sidebar-links .link,
+.sidebar-settings .link {
+    display: flex;
+    gap: 16px;
 }
 
 .sidebar-links a,
@@ -56,14 +67,37 @@ body {
 
 .dashboard-header {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr 2fr;
     padding: 16px;
     align-items: center;
 }
 
 .dashboard-header .searchbar {
-    padding-left: 16px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.searchbar label {
+    display: flex;
+    align-items: center;
+}
+
+.searchbar input {
+    border-radius: 20px;
+    padding: 6px;
+    background-color: #e2e8f0;
+    border: 1px solid #D6D9DC;
+    width: 100%;
+}
+
+.searchbar input:focus {
+    outline: none;
+    border: 1px solid #1992d4;
+    color: black;
+    box-shadow: none; /* Remove default red glow in Firefox */
 }
 
 .dashboard-header .notification {
@@ -76,6 +110,17 @@ body {
     display: flex;
     gap: 16px;
     justify-content: center;
+    cursor: pointer;
+}
+
+.buttons button {
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    background-color: #b8202c;
+    border-radius: 40px;
+    border: none;
 }
 
 .dashboard-main {
