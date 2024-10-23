@@ -45,7 +45,13 @@ body {
     align-items: center;
 }
 
-.dashboard-sidebar .sidebar-logo p {
+.sidebar-logo svg {
+    width: 50px;
+    height: 50px;
+    fill: white;
+}
+
+.sidebar-logo p {
     font-weight: bold;
     font-size: 26px;
 }
@@ -54,6 +60,12 @@ body {
 .sidebar-settings .link {
     display: flex;
     gap: 16px;
+}
+
+.link svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
 }
 
 .sidebar-links a,
@@ -104,6 +116,34 @@ body {
     display: flex;
     gap: 16px;
     justify-content: center;
+    align-items: center;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.dashboard-header .user-welcome {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1fr 2fr;
+    column-gap: 16px;
+    padding: 8px;
+    align-items: center;
+}
+
+.user-welcome img {
+    grid-row: 1/3;
+}
+
+.user-welcome .welcome {
+    font-size: 12px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.user-welcome .username {
+    font-size: 24px;
 }
 
 .dashboard-header .buttons {
@@ -121,6 +161,10 @@ body {
     background-color: #b8202c;
     border-radius: 40px;
     border: none;
+}
+
+button:hover {
+    background-color: #ee2939;
 }
 
 .dashboard-main {
