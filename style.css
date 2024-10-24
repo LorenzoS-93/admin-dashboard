@@ -30,7 +30,8 @@ body {
     flex-direction: column;
     gap: 50px;
     color: white;
-    padding: 24px;
+    padding-top: 24px;
+    padding-right: 70px;
 }
 
 .dashboard-sidebar .sidebar-links,
@@ -43,6 +44,7 @@ body {
     display: flex;
     gap: 8px;
     align-items: center;
+    padding-left: 24px;
 }
 
 .sidebar-logo svg {
@@ -60,6 +62,15 @@ body {
 .sidebar-settings .link {
     display: flex;
     gap: 16px;
+    padding: 12px;
+    padding-left: 24px;
+    border-radius: 0 20px 20px 0;
+}
+
+.sidebar-links .link:hover,
+.sidebar-settings .link:hover {
+    background-color: #ee2939;
+    box-shadow: #2b2a2a 2px 2px 4px;
 }
 
 .link svg {
@@ -74,7 +85,6 @@ body {
     color: white;
     font-weight: bold;
     font-size: 20px;
-    margin-bottom: 24px;
 }
 
 .dashboard-header {
@@ -119,6 +129,10 @@ body {
     align-items: center;
 }
 
+.notification svg:hover {
+    fill: #2b2a2a;
+}
+
 .username {
     font-weight: bold;
 }
@@ -150,21 +164,24 @@ body {
     display: flex;
     gap: 16px;
     justify-content: center;
-    cursor: pointer;
 }
 
 .buttons button {
-    width: 100px;
-    height: 40px;
+    padding: 12px 40px;
     color: white;
     font-weight: bold;
     background-color: #b8202c;
     border-radius: 40px;
     border: none;
+    cursor: pointer;
 }
 
-button:hover {
+.buttons button:hover {
     background-color: #ee2939;
+}
+
+.buttons button:active {
+    background-color: #8b1721;
 }
 
 .dashboard-main {
@@ -240,3 +257,14 @@ button:hover {
     margin-bottom: 12px;
     background-color: #d2d2d2;
 }
+
+.trending .box {
+    gap: 16px;
+}
+
+.box .trending-profile {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
